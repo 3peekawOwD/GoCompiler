@@ -13,11 +13,7 @@ npm i
 
 #### Run Go code
 
-Open the `index.js` file, replace the text in the `code` variable with your code
-
-Run `node index.js`
-
-![](https://hsto.org/webt/uo/dj/9z/uodj9ze_z0jfpjizwiripyvdhai.png)
+Run `node index.js file.go`
 
 Profit!
 
@@ -36,11 +32,7 @@ npm i
 
 #### Запуск кода
 
-Откройте файл `index.js` и замените текст в переменной `code` на свой код
-
-![](https://hsto.org/webt/uo/dj/9z/uodj9ze_z0jfpjizwiripyvdhai.png)
-
-Введите в консоли `node index.js`
+Введите в консоли `node index.js file.go`
 
 Наслаждайтесь результатом
 
