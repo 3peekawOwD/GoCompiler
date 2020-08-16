@@ -22,6 +22,7 @@ fetch("https://golang.org/compile", {
 .then(res => res.json())
 .then(body => {
 	if(body.Errors) return console.log(`[ERROR] -> ${body.Errors}`);
+	if(body.Events == null) return console.log("Program exited.");
 
 	for(var i=0; i<body.Events.length; i++) {
 		if(body.Events[i].Kind == "stdout") {
