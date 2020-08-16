@@ -1,14 +1,15 @@
 const fetch = require("node-fetch");
+const fs = require("fs");
 
-const code = `
-package main
+var path = require("path");
+let inputProgramm = process.argv[2];
+var code;
 
-import "fmt"
-
-func main() {
-	fmt.Println("Hello world!")
+if(path.extname(inputProgramm) == ".go") {
+  code = fs.readFileSync(inputProgramm, "utf8")
+} else {
+  throw new TypeError("Unknown input file type")
 }
-`
 
 fetch("https://golang.org/compile", {
 	"headers": { 
